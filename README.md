@@ -24,7 +24,6 @@ Usage:
 4. `reload()` put the functions previously loaded into current context
   
     ```javascript
-    //can load more than one file once.
     utils.reload(this);
     ```
 
