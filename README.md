@@ -19,12 +19,12 @@ Usage:
   
     ```javascript
     //can load more than one file once.
-    utils.load(['moment.min'], this);
+    utils.load(['moment.min']);//or utils.load('moment.min');
     ```
 4. `reload()` put the functions previously loaded into current context
   
     ```javascript
-    utils.reload(this);
+    utils.reload();
     ```
 
 Check the example jmx file. Tested on JMeter 2.9
