@@ -48,7 +48,7 @@
           <stringProp name="parameters"></stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="script">//we have to retrieve the utils from vars
-var utils = vars.getObject(&apos;utils&apos;);
+var utils = props.get(&apos;utils&apos;);
 log.info(&apos;Now we are trying to load moment.min.js&apos;);
 utils.load([&apos;moment.min&apos;]);//or utils.load(&apos;moment.min&apos;);
 
@@ -62,7 +62,7 @@ log.info(now);</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="script">//every new BSF Element, we have to call load/reload at least once, to access the js functions and varables.
-var utils = vars.getObject(&apos;utils&apos;);
+var utils = props.get(&apos;utils&apos;);
 utils.reload();
 
 var now = moment().format();
