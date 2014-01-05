@@ -48,5 +48,5 @@
 		load: load,
 		reload: reload
 	};
-	vars.putObject("utils", utils);
+	props.put("utils", utils);
 })();
