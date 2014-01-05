@@ -9,11 +9,11 @@ Usage:
 ------
 1. Load the utils.js at first by BSF Sampler
   > It require one parameter: `jsPath` in `vars`.
-2. From other BSF Sampler, it is require to load the utils from `vars`.
+2. From other BSF Sampler, it is require to load the utils from `props`.
 
     ```javascript
     //it have to be retrieved everytime from new Sampler
-    var utils = vars.getObject('utils');
+    var utils = props.get('utils');
     ```
 3. `load()` js files and add the functions into current context
   
