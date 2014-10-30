@@ -37,7 +37,7 @@
 
 	if(!_global){
 		var shell = org.mozilla.javascript.tools.shell.Main;
-		var params = ['-e',''];
+		var args = ['-e',''];
 		shell.exec(args);
 		_global = shell.global;
 		_jsPath = vars.get('jsPath');		
